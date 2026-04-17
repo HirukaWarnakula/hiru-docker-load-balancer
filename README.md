@@ -12,11 +12,11 @@ This project demonstrates how to scale a web application and distribute traffic 
 - **Nginx Container:** Acts as a Reverse Proxy and Load Balancer listening on port 8080.
 - **Flask Containers:** Three identical instances of the backend app running simultaneously.
 
-- **Load Balancer (Nginx):**Configured as a reverse proxy that uses the Round-Robin algorithm to distribute incoming traffic on port 8080.
+- **Load Balancer(Nginx):** Configured as a reverse proxy that uses the Round-Robin algorithm to distribute incoming traffic on port 8080.
 
--**Scalable Backend (Flask):**Utilizes Docker's --scale feature to run multiple instances of the application, ensuring that the system remains functional even if one container fails (Self-Healing concept).
+- **Scalable Backend (Flask):** Utilizes Docker's --scale feature to run multiple instances of the application, ensuring that the system remains functional even if one container fails (Self-Healing concept).
 
--**Internal Networking:** All containers communicate via a dedicated Docker bridge network, keeping the backend isolated from direct public access.
+- **Internal Networking:** All containers communicate via a dedicated Docker bridge network, keeping the backend isolated from direct public access.
 
 
 
